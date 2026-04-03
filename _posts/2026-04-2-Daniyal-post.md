@@ -1,8 +1,8 @@
 ---
-tittle: " Computer engineering struggle"
+tittle: " Computer Engineering struggle"
 date: 2026-03-28
 categories: [Blogging, Programming]
-tags: [pf, struggle, engineering]
+tags: [Programming Fundamental, Database]
 ---
 ---
   "Starting My Computer Engineering Journey"
