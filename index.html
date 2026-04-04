@@ -6,15 +6,15 @@
   <title>Daniyal Blog</title>
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+
   <!-- Navbar -->
   <nav>
     <h2>Daniyal</h2>
     <div>
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#blogs">Blogs</a>
+      <a href="index.html">Home</a>
+      <a href="categories.html">Categories</a>
+      <a href="#contact">Contact</a>
     </div>
   </nav>
 
@@ -22,51 +22,30 @@
   <section id="home" style="text-align:center; padding:60px;">
     <img src="me.jpg" width="150" style="border-radius:50%; margin-bottom:20px;">
     <h1 style="font-size:40px; margin-bottom:10px;">Hi, I'm Daniyal 👋</h1>
-    <p style="font-size:18px; max-width:600px; margin:0 auto;">
-      Computer Engineering Student | Learning Programming Step by Step
-    </p>
   </section>
 
   <!-- About Section -->
   <section id="about" style="text-align:center; padding:60px; background-color:#111827;">
-    <h2 style="font-size:32px; margin-bottom:20px;">About Me</h2>
-    <p style="font-size:18px; max-width:700px; margin:0 auto;">
-      I am Daniyal, a Computer Engineering student. I am currently learning Python, C#, and MySQL.
-      My goal is to become a professional developer and improve problem-solving skills.
+    <h2>About Me</h2>
+    <p style="max-width:700px; margin:20px auto; font-size:18px;">
+      I am Daniyal, a Computer Engineering student with a passion for technology and problem-solving.
+      I am learning programming step by step and exploring projects in Python, C#, and MySQL.
+    </p>
+    <p style="max-width:700px; margin:20px auto; font-size:18px;">
+      My goal is to build professional skills and create real-world applications.
+      This blog is where I document my journey, learning experiences, and projects.
     </p>
   </section>
 
-  <!-- Blog Section -->
-  <section id="blogs" style="text-align:center; padding:60px;">
-    <h2 style="font-size:32px; margin-bottom:40px;">My Blogs</h2>
-
-    <!-- Blog Card 1 -->
-  <div class="card" style="background:#1e293b; padding:25px; margin:20px auto; width:60%; border-radius:12px; box-shadow:0 0 10px rgba(0,0,0,0.5);">
-    <h3 style="font-size:24px; margin-bottom:10px;">Semester 1 Journey</h3>
-    <p style="font-size:16px;">
-      In my first semester, I studied Programming Fundamentals (Python), which was challenging, 
-      but I worked hard and improved. I also participated in a project exhibition based on Machine Learning.
-    </p>
-  </div>
-
-  <!-- Blog Card 2 -->
-  <div class="card" style="background:#1e293b; padding:25px; margin:20px auto; width:60%; border-radius:12px; box-shadow:0 0 10px rgba(0,0,0,0.5);">
-    <h3 style="font-size:24px; margin-bottom:10px;">Semester 2 Goals</h3>
-    <p style="font-size:16px;">
-      In my second semester, I focused on OOP, DLD, Calculus, and Database Management.
-      My goal was to achieve a GPA above 3.5 and improve my skills step by step.
-    </p>
-  </div>
-
-  <!-- Blog Card 3 -->
-  <div class="card" style="background:#1e293b; padding:25px; margin:20px auto; width:60%; border-radius:12px; box-shadow:0 0 10px rgba(0,0,0,0.5);">
-    <h3 style="font-size:24px; margin-bottom:10px;">Semester 3 Plans</h3>
-    <p style="font-size:16px;">
-      I plan to dive deeper into Database Management, SQL projects, and advanced programming concepts,
-      applying my skills to real projects to gain experience.
-    </p>
-  </div>
-
+  <!-- Contact Section -->
+  <section id="contact" style="text-align:center; padding:60px; background-color:#111827;">
+    <h2>Contact Me</h2>
+    <form style="max-width:500px; margin:0 auto;">
+      <input type="text" placeholder="Your Name" required style="width:100%; padding:10px; margin:10px 0;">
+      <input type="email" placeholder="Your Email" required style="width:100%; padding:10px; margin:10px 0;">
+      <textarea placeholder="Your Message" rows="5" required style="width:100%; padding:10px; margin:10px 0;"></textarea>
+      <button type="submit" style="padding:10px 20px; background:#2563eb; color:white; border:none; border-radius:5px;">Send</button>
+    </form>
   </section>
 
   <!-- Footer -->
@@ -74,17 +53,5 @@
     <p>© 2026 Daniyal | Computer Engineering Student</p>
   </footer>
 
-  <!-- JS for fade-in animation -->
-  <script>
-    const sections = document.querySelectorAll('section');
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if(entry.isIntersecting){
-          entry.target.classList.add('visible');
-        }
-      });
-    }, {threshold: 0.1});
-    sections.forEach(section => observer.observe(section));
-  </script>
 </body>
 </html>
