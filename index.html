@@ -9,74 +9,85 @@
 <body>
   <!-- Header / Navigation -->
   <header>
-    <h1>Daniyal's Journey in Computer Engineering</h1>
-    <nav>
-      <ul>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#semester1">Semester 1</a></li>
-        <li><a href="#semester2">Semester 2</a></li>
-      </ul>
-    </nav>
+    <div class="container">
+      <h1 class="logo">Daniyal</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#semester1">Semester 1</a></li>
+          <li><a href="#semester2">Semester 2</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
   <!-- About Me Section -->
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Hi, I am Daniyal, a Computer Engineering student. I am a beginner in programming and currently learning Python, C#, and MySQL. I am passionate about technology and eager to learn new concepts step by step. My goal is to become a professional Computer Engineer and strengthen my problem-solving skills.</p>
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>Hi, I am Daniyal, a Computer Engineering student. I am a beginner in programming and currently learning Python, C#, and MySQL. I am passionate about technology and eager to learn new concepts step by step. My goal is to become a professional Computer Engineer and strengthen my problem-solving skills.</p>
+    </div>
   </section>
 
-  <!-- Semester 1 Blog Posts -->
-  <section id="semester1">
-    <h2>Semester 1 Blogs</h2>
+  <!-- Semester 1 Blogs -->
+  <section id="semester1" class="section">
+    <div class="container">
+      <h2>Semester 1 Blogs</h2>
 
-    <article class="blog-post">
-      <h3>Blog 1: Start of My Journey</h3>
-      <p>In my first semester, I explored Python fundamentals. It was challenging at first, but with perseverance, I improved. I also participated in a machine learning project where we trained a model to predict prices based on various factors... 
-      <span class="read-more" onclick="toggleReadMore(this)">Read More</span>
-      <span class="more-text"> Eventually, I completed the semester with a GPA of 3.1 (B+), which motivated me to aim higher in the next semester.</span>
-      </p>
-    </article>
+      <article class="blog-post">
+        <h3>Blog 1: Start of My Journey</h3>
+        <p>In my first semester, I explored Python fundamentals. It was challenging at first, but with perseverance, I improved. I also participated in a machine learning project where we trained a model to predict prices based on various factors...
+          <span class="more-text"> Eventually, I completed the semester with a GPA of 3.1 (B+), which motivated me to aim higher in the next semester.</span>
+        </p>
+        <button class="read-more-btn" onclick="toggleReadMore(this)">Read More</button>
+      </article>
 
-    <article class="blog-post">
-      <h3>Blog 2: Semester 1 Project Exhibition</h3>
-      <img src="images/blog1.jpg" alt="Machine Learning Project">
-      <p>Our first semester project exhibition focused on Machine Learning. We trained a model to predict outcomes based on collected data. It was an eye-opening experience to see theory applied in practice...</p>
-    </article>
+      <article class="blog-post">
+        <h3>Blog 2: Semester 1 Project Exhibition</h3>
+        <img src="images/blog1.jpg" alt="Machine Learning Project">
+        <p>Our first semester project exhibition focused on Machine Learning. We trained a model to predict outcomes based on collected data. It was an eye-opening experience to see theory applied in practice...</p>
+      </article>
+    </div>
   </section>
 
-  <!-- Semester 2 Blog Posts -->
-  <section id="semester2">
-    <h2>Semester 2 Blogs</h2>
+  <!-- Semester 2 Blogs -->
+  <section id="semester2" class="section">
+    <div class="container">
+      <h2>Semester 2 Blogs</h2>
 
-    <article class="blog-post">
-      <h3>Blog 6: Motivation for Semester 2</h3>
-      <p>After obtaining a GPA of 3.1, I decided to aim for above 3.5 this semester. My focus is on improving skills in Calculus, OOP, DLD, Communication Skills, and Database Management...</p>
-    </article>
+      <article class="blog-post">
+        <h3>Blog 6: Motivation for Semester 2</h3>
+        <p>After obtaining a GPA of 3.1, I decided to aim for above 3.5 this semester. My focus is on improving skills in Calculus, OOP, DLD, Communication Skills, and Database Management...</p>
+      </article>
 
-    <article class="blog-post">
-      <h3>Blog 7: Database Management</h3>
-      <img src="images/blog2.jpg" alt="MySQL Workbench">
-      <p>This semester, we are working on SQL using MySQL Workbench. I learned the basics of SQL and database design, which is both challenging and exciting...</p>
-    </article>
-    
-    <!-- Add more semester 2 blogs as needed -->
+      <article class="blog-post">
+        <h3>Blog 7: Database Management</h3>
+        <img src="images/blog2.jpg" alt="MySQL Workbench">
+        <p>This semester, we are working on SQL using MySQL Workbench. I learned the basics of SQL and database design, which is both challenging and exciting...</p>
+      </article>
+
+      <!-- Add more semester 2 blogs if needed -->
+    </div>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2026 Daniyal's Blog. All rights reserved.</p>
+    <div class="container">
+      <p>&copy; 2026 Daniyal's Blog. All rights reserved.</p>
+    </div>
   </footer>
 
+  <!-- Read More Script -->
   <script>
-    // Read More Toggle Function
-    function toggleReadMore(element) {
-      const moreText = element.nextElementSibling;
+    function toggleReadMore(btn) {
+      const post = btn.previousElementSibling;
+      const moreText = post.querySelector(".more-text");
       if (moreText.style.display === "inline") {
         moreText.style.display = "none";
-        element.textContent = "Read More";
+        btn.textContent = "Read More";
       } else {
         moreText.style.display = "inline";
-        element.textContent = "Read Less";
+        btn.textContent = "Read Less";
       }
     }
   </script>
