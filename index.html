@@ -3,91 +3,82 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Daniyal Blog</title>
+  <title>Daniyal's Blog</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <!-- Navbar -->
-  <nav>
-    <h2>Daniyal</h2>
-    <div>
-      <a href="index.html">Home</a>
-      <a href="categories.html">Categories</a>
-      <a href="#contact">Contact</a>
-    </div>
-  </nav>
-
-  <!-- Hero Section -->
-  <section id="home" style="text-align:center; padding:60px;">
-    <img src="me.jpg" width="150" style="border-radius:50%; margin-bottom:20px;">
-    <h1 style="font-size:40px; margin-bottom:10px;">Hi, I'm Daniyal 👋</h1>
-    <p style="font-size:18px; max-width:600px; margin:0 auto;">
-      Computer Engineering Student | Passionate about Programming, Database Management, and Technology
-    </p>
-  </section>
+  <!-- Header / Navigation -->
+  <header>
+    <h1>Daniyal's Journey in Computer Engineering</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#semester1">Semester 1</a></li>
+        <li><a href="#semester2">Semester 2</a></li>
+      </ul>
+    </nav>
+  </header>
 
   <!-- About Me Section -->
-  <section id="about" style="text-align:center; padding:60px; background-color:#111827;">
+  <section id="about">
     <h2>About Me</h2>
-    <p style="max-width:700px; margin:20px auto; font-size:18px;">
-      I am Daniyal, a Computer Engineering student eager to learn and solve technical problems.
-      My goal is to develop strong programming and database management skills and build real-world projects.
-    </p>
-    <p style="max-width:700px; margin:20px auto; font-size:18px;">
-      This blog documents my journey step by step, the projects I work on, and the challenges I overcome while improving my skills in Python, C#, SQL, and web development.
-    </p>
+    <p>Hi, I am Daniyal, a Computer Engineering student. I am a beginner in programming and currently learning Python, C#, and MySQL. I am passionate about technology and eager to learn new concepts step by step. My goal is to become a professional Computer Engineer and strengthen my problem-solving skills.</p>
   </section>
 
-  <!-- Semester Highlights Section -->
-  <section id="semesters" style="text-align:center; padding:60px;">
-    <h2>Semester Highlights</h2>
+  <!-- Semester 1 Blog Posts -->
+  <section id="semester1">
+    <h2>Semester 1 Blogs</h2>
 
-    <!-- Semester 1 -->
-    <div class="card" style="margin:30px auto;">
-      <h3>Semester 1: Programming Fundamentals</h3>
-      <p>
-        In the first semester, I focused on <strong>Programming Fundamentals</strong>, where we studied Python. I practiced solving technical problems and learned core programming concepts like loops, functions, and data structures.
+    <article class="blog-post">
+      <h3>Blog 1: Start of My Journey</h3>
+      <p>In my first semester, I explored Python fundamentals. It was challenging at first, but with perseverance, I improved. I also participated in a machine learning project where we trained a model to predict prices based on various factors... 
+      <span class="read-more" onclick="toggleReadMore(this)">Read More</span>
+      <span class="more-text"> Eventually, I completed the semester with a GPA of 3.1 (B+), which motivated me to aim higher in the next semester.</span>
       </p>
-      <p>
-        For our semester project, we worked on a <strong>Machine Learning</strong> model, training it to predict outcomes based on various data factors. Through this project, I gained hands-on experience with machine learning concepts and model training.
-      </p>
-      <p>
-        I finished the first semester with a GPA of <strong>3.1</strong>, which motivated me to improve further in the next semester.
-      </p>
-    </div>
+    </article>
 
-    <!-- Semester 2 -->
-    <div class="card" style="margin:30px auto;">
-      <h3>Semester 2: Database Management & Web Development</h3>
-      <p>
-        In the second semester, I focused on <strong>Database Management</strong>, working extensively with <strong>MySQL</strong>. We designed and managed databases and applied SQL queries to real datasets.
-      </p>
-      <p>
-        I also began learning <strong>website creation</strong>, building simple websites to showcase projects. During this semester, I continued improving my skills in Python, C#, and SQL, combining programming with practical applications.
-      </p>
-      <p>
-        This semester strengthened my programming logic and practical problem-solving skills while preparing me for more advanced projects in the upcoming semesters.
-      </p>
-    </div>
-
+    <article class="blog-post">
+      <h3>Blog 2: Semester 1 Project Exhibition</h3>
+      <img src="images/blog1.jpg" alt="Machine Learning Project">
+      <p>Our first semester project exhibition focused on Machine Learning. We trained a model to predict outcomes based on collected data. It was an eye-opening experience to see theory applied in practice...</p>
+    </article>
   </section>
 
-  <!-- Contact Section -->
-  <section id="contact" style="text-align:center; padding:60px; background-color:#111827;">
-    <h2>Contact Me</h2>
-    <form style="max-width:500px; margin:0 auto;">
-      <input type="text" placeholder="Your Name" required style="width:100%; padding:10px; margin:10px 0;">
-      <input type="email" placeholder="Your Email" required style="width:100%; padding:10px; margin:10px 0;">
-      <textarea placeholder="Your Message" rows="5" required style="width:100%; padding:10px; margin:10px 0;"></textarea>
-      <button type="submit" style="padding:10px 20px; background:#2563eb; color:white; border:none; border-radius:5px;">Send</button>
-    </form>
+  <!-- Semester 2 Blog Posts -->
+  <section id="semester2">
+    <h2>Semester 2 Blogs</h2>
+
+    <article class="blog-post">
+      <h3>Blog 6: Motivation for Semester 2</h3>
+      <p>After obtaining a GPA of 3.1, I decided to aim for above 3.5 this semester. My focus is on improving skills in Calculus, OOP, DLD, Communication Skills, and Database Management...</p>
+    </article>
+
+    <article class="blog-post">
+      <h3>Blog 7: Database Management</h3>
+      <img src="images/blog2.jpg" alt="MySQL Workbench">
+      <p>This semester, we are working on SQL using MySQL Workbench. I learned the basics of SQL and database design, which is both challenging and exciting...</p>
+    </article>
+    
+    <!-- Add more semester 2 blogs as needed -->
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>© 2026 Daniyal | Computer Engineering Student</p>
+    <p>&copy; 2026 Daniyal's Blog. All rights reserved.</p>
   </footer>
 
+  <script>
+    // Read More Toggle Function
+    function toggleReadMore(element) {
+      const moreText = element.nextElementSibling;
+      if (moreText.style.display === "inline") {
+        moreText.style.display = "none";
+        element.textContent = "Read More";
+      } else {
+        moreText.style.display = "inline";
+        element.textContent = "Read Less";
+      }
+    }
+  </script>
 </body>
 </html>
