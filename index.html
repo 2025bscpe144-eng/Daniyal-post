@@ -1,49 +1,46 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Daniyal Blog</title>
-
-  <!-- Link CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
   <!-- Navbar -->
- <nav>
-  <h2>Daniyal</h2>
-  <div>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#blogs">Blogs</a>
-  </div>
-</nav>
+  <nav>
+    <h2>Daniyal</h2>
+    <div>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#blogs">Blogs</a>
+    </div>
+  </nav>
 
   <!-- Hero Section -->
- <!-- Hero Section -->
-<section id="home" style="text-align:center; padding:60px;">
-  <img src="pp.jpg" width="150" style="border-radius:50%; margin-bottom:20px;">
-  <h1 style="font-size:40px; margin-bottom:10px;">Hi, I'm Daniyal 👋</h1>
-  <p style="font-size:18px; max-width:600px; margin:0 auto;">
-    Computer Engineering Student | Learning Programming Step by Step | Passionate about Technology and Problem Solving
-  </p>
-</section>
+  <section id="home" style="text-align:center; padding:60px;">
+    <img src="me.jpg" width="150" style="border-radius:50%; margin-bottom:20px;">
+    <h1 style="font-size:40px; margin-bottom:10px;">Hi, I'm Daniyal 👋</h1>
+    <p style="font-size:18px; max-width:600px; margin:0 auto;">
+      Computer Engineering Student | Learning Programming Step by Step
+    </p>
+  </section>
 
-<!-- About Section -->
-<section id="about" style="text-align:center; padding:60px; background-color:#111827;">
-  <h2 style="font-size:32px; margin-bottom:20px;">About Me</h2>
-  <p style="font-size:18px; max-width:700px; margin:0 auto;">
-    I am Daniyal, a Computer Engineering student. I am currently learning Python, C#, and MySQL.
-    My goal is to become a professional developer and build strong problem-solving skills.
-  </p>
-</section>
+  <!-- About Section -->
+  <section id="about" style="text-align:center; padding:60px; background-color:#111827;">
+    <h2 style="font-size:32px; margin-bottom:20px;">About Me</h2>
+    <p style="font-size:18px; max-width:700px; margin:0 auto;">
+      I am Daniyal, a Computer Engineering student. I am currently learning Python, C#, and MySQL.
+      My goal is to become a professional developer and improve problem-solving skills.
+    </p>
+  </section>
 
-<!-- Blog Section -->
-<section id="blogs" style="text-align:center; padding:60px;">
-  <h2 style="font-size:32px; margin-bottom:40px;">My Blogs</h2>
+  <!-- Blog Section -->
+  <section id="blogs" style="text-align:center; padding:60px;">
+    <h2 style="font-size:32px; margin-bottom:40px;">My Blogs</h2>
 
-  <!-- Blog Card 1 -->
+    <!-- Blog Card 1 -->
   <div class="card" style="background:#1e293b; padding:25px; margin:20px auto; width:60%; border-radius:12px; box-shadow:0 0 10px rgba(0,0,0,0.5);">
     <h3 style="font-size:24px; margin-bottom:10px;">Semester 1 Journey</h3>
     <p style="font-size:16px;">
@@ -70,28 +67,24 @@
     </p>
   </div>
 
-</section>
+  </section>
 
   <!-- Footer -->
-<footer>
-  <p>© 2026 Daniyal | Computer Engineering Student</p>
-</footer>
+  <footer>
+    <p>© 2026 Daniyal | Computer Engineering Student</p>
+  </footer>
 
+  <!-- JS for fade-in animation -->
+  <script>
+    const sections = document.querySelectorAll('section');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting){
+          entry.target.classList.add('visible');
+        }
+      });
+    }, {threshold: 0.1});
+    sections.forEach(section => observer.observe(section));
+  </script>
 </body>
-
 </html>
-<script>
-  const sections = document.querySelectorAll('section');
-
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if(entry.isIntersecting){
-        entry.target.classList.add('visible');
-      }
-    });
-  }, {threshold: 0.1});
-
-  sections.forEach(section => {
-    observer.observe(section);
-  });
-</script>
