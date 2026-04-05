@@ -1,73 +1,66 @@
-/* General Styling */
 body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
+  font-family: Arial;
   margin: 0;
-  padding: 0;
-  background: #f4f4f4;
-  color: #333;
+  background: #f5f5f5;
 }
 
-header {
-  background: #4CAF50;
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background: #222;
   color: white;
-  padding: 1rem 0;
-  text-align: center;
+  padding: 15px;
 }
 
-header nav ul {
+.navbar ul {
   list-style: none;
-  padding: 0;
+  display: flex;
 }
 
-header nav ul li {
-  display: inline;
-  margin: 0 10px;
+.navbar ul li {
+  margin-left: 20px;
 }
 
-header nav ul li a {
+.navbar a {
   color: white;
   text-decoration: none;
 }
 
-section {
-  padding: 2rem;
-  max-width: 800px;
-  margin: auto;
-  background: white;
-  margin-bottom: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-h2 {
-  color: #4CAF50;
-  margin-bottom: 1rem;
-}
-
-.blog-post {
-  margin-bottom: 2rem;
-}
-
-.blog-post img {
-  max-width: 100%;
-  border-radius: 8px;
-  margin: 1rem 0;
-}
-
-.read-more {
-  color: #4CAF50;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-.more-text {
-  display: none;
-}
-
-footer {
+/* ABOUT */
+.about {
   text-align: center;
-  padding: 1rem 0;
-  background: #333;
+  padding: 50px;
+}
+
+.about img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+/* BLOGS */
+.blogs {
+  padding: 40px;
+}
+
+.blog-card {
+  background: white;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #ccc;
+}
+
+/* BUTTON */
+.btn {
+  display: inline-block;
+  padding: 10px 15px;
+  background: #007BFF;
   color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background: #0056b3;
 }
