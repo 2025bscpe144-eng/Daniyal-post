@@ -2,101 +2,37 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Daniyal's Blog</title>
+  <title>Daniyal Blog</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Header / Navigation -->
-  <header>
-    <div class="container">
-      <h1 class="logo">Daniyal</h1>
-      <nav>
-        <ul>
-         <nav>
-  <a href="index.html">About Me</a>
-  <a href="semester1.html">Semester 1</a>
-  <a href="semester2.html">Semester 2</a>
-</nav>
-  </header>
-  <nav>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <h2>Daniyal Blog</h2>
   <ul>
     <li><a href="index.html">Home</a></li>
-    <li><a href="categories.html">Categories</a></li>
-    <li><a href="tags.html">Tags</a></li>
-    <li><a href="about.html">About</a></li>
+    <li><a href="blogs.html">Read Blogs</a></li>
   </ul>
 </nav>
 
-  <!-- About Me Section -->
-  <section id="about" class="section">
-    <div class="container">
-      <h2>About Me</h2>
-      <p>Hi, I am Daniyal, a Computer Engineering student. I am a beginner in programming and currently learning Python, C#, and MySQL. I am passionate about technology and eager to learn new concepts step by step. My goal is to become a professional Computer Engineer and strengthen my problem-solving skills.</p>
-    </div>
-  </section>
+<!-- ABOUT SECTION -->
+<section class="about">
+  <img src="assets/pp.jpg" alt="Profile">
+  
+  <h1>About Me</h1>
+  <p>
+    Hi, I am Daniyal, a Computer Engineering student passionate about technology and learning new skills.
+    I am currently focusing on Python, C#, MySQL, and improving my problem-solving abilities.
+  </p>
 
-  <!-- Semester 1 Blogs -->
-  <section id="semester1" class="section">
-    <div class="container">
-      <h2>Semester 1 Blogs</h2>
+  <p>
+    My journey started as a beginner, facing challenges in programming fundamentals, but with consistency
+    and effort, I improved step by step. My goal is to achieve excellence in my field and build impactful projects.
+  </p>
 
-      <article class="blog-post">
-        <h3>Blog 1: Start of My Journey</h3>
-        <p>In my first semester, I explored Python fundamentals. It was challenging at first, but with perseverance, I improved. I also participated in a machine learning project where we trained a model to predict prices based on various factors...
-          <span class="more-text"> Eventually, I completed the semester with a GPA of 3.1 (B+), which motivated me to aim higher in the next semester.</span>
-        </p>
-        <button class="read-more-btn" onclick="toggleReadMore(this)">Read More</button>
-      </article>
+  <a href="about.html" class="btn">Read More</a>
+</section>
 
-      <article class="blog-post">
-        <h3>Blog 2: Semester 1 Project Exhibition</h3>
-        <img src="images/blog1.jpg" alt="Machine Learning Project">
-        <p>Our first semester project exhibition focused on Machine Learning. We trained a model to predict outcomes based on collected data. It was an eye-opening experience to see theory applied in practice...</p>
-      </article>
-    </div>
-  </section>
-
-  <!-- Semester 2 Blogs -->
-  <section id="semester2" class="section">
-    <div class="container">
-      <h2>Semester 2 Blogs</h2>
-
-      <article class="blog-post">
-        <h3>Blog 6: Motivation for Semester 2</h3>
-        <p>After obtaining a GPA of 3.1, I decided to aim for above 3.5 this semester. My focus is on improving skills in Calculus, OOP, DLD, Communication Skills, and Database Management...</p>
-      </article>
-
-      <article class="blog-post">
-        <h3>Blog 7: Database Management</h3>
-        <img src="images/blog2.jpg" alt="MySQL Workbench">
-        <p>This semester, we are working on SQL using MySQL Workbench. I learned the basics of SQL and database design, which is both challenging and exciting...</p>
-      </article>
-
-      <!-- Add more semester 2 blogs if needed -->
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <div class="container">
-      <p>&copy; 2026 Daniyal's Blog. All rights reserved.</p>
-    </div>
-  </footer>
-
-  <!-- Read More Script -->
-  <script>
-    function toggleReadMore(btn) {
-      const post = btn.previousElementSibling;
-      const moreText = post.querySelector(".more-text");
-      if (moreText.style.display === "inline") {
-        moreText.style.display = "none";
-        btn.textContent = "Read More";
-      } else {
-        moreText.style.display = "inline";
-        btn.textContent = "Read Less";
-      }
-    }
-  </script>
 </body>
 </html>
